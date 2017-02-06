@@ -1,0 +1,14 @@
+<div class="team-page">
+  <h1 class="text-center">Meet the team</h1>
+
+  <div class ="text-center">
+    <ul class="list-inline">
+      <% %w(romain anne seb).each do |member| %>
+        <li>
+          <img src="images/<%= member%>.jpg" width="100" class="img-circle" alt="">
+          <h3><%= member.capitalize %></h3>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
